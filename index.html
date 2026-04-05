@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Balarabe suleiman | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: var(--card-bg);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        header {
+            height: 70vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--accent);
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+        }
+
+        h1 { font-size: 2.8rem; }
+        .subtitle { color: var(--accent); }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section { margin-bottom: 4rem; }
+
+        h2 {
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: var(--bg-color);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .contact p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <img src="IMAGES/IMG-20260404-WA0033.jpg" class="profile-pic">
+        <h1>Balarabe suleiman</h1>
+        <p class="subtitle">Student & Aspiring Software Developer</p>
+        <p>Kano, Nigeria</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate and dedicated Software Engineering student at the Federal University of Technology, Babura, with a strong interest in technology and problem-solving. My journey in education began at St. Thomas Nursery and Primary School, Gboko, Benue State, where I built a solid academic foundation. I later attended Dogara Model College, Kano, for my secondary education, where I developed discipline, curiosity, and a growing interest in science and technology.
+
+Currently, I am focused on developing my skills in software development, web design, and programming. I enjoy creating practical solutions, building projects, and continuously learning new technologies to improve my craft.
+
+I am motivated by the desire to become a skilled software engineer who can contribute meaningfully to the tech industry and solve real-world problems through innovation and creativity.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Discrete Structures Toolkit</h3>
+                     <h3>Portfolio</h3>
+                      <h3>A simple calculator</h3>
+                    <span class="badge">C++</span>
+                    <span class="badge">python</span>
+                    <span class="badge">html</span>
+                      <span class="badge">css</span>
+                        <span class="badge">javascript</span>
+                </div>
+                <div class="card">
+                    <h3>Technical Research</h3>
+                    <h3>Report Writting</h3>
+                    <span class="badge">Research</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="card">
+                <ul>
+                    <li>C++</li>
+                    <li>Web development</li>
+                    <li>Problem Solving</li>
+                     <li>python</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="card contact">
+                <p><strong>Email:</strong> suleimanbalarabe68@gmail.com</p>
+                <p><strong>Phone:</strong> +234 708 625 2842</p>
+                <p><strong>Location:</strong> Kano, Nigeria</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
